@@ -55,4 +55,5 @@ for imagePath in imagePaths:
 	# show the output images
 	cv2.imshow("Before NMS", orig)
 	cv2.imshow("After NMS", image)
+	
 	cv2.waitKey(0)

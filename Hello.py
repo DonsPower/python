@@ -30,3 +30,11 @@ for n in x:
 thislist = ["apple", "banana", "cherry"]
 for x in thislist:
   print(x)
+alca=[]
+
+for x in range(1,6):
+    a=input("agrega: ")
+    alca.append(a)
+
+for y in range(len(alca)):
+    print (alca[y])
