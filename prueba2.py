@@ -1,8 +1,9 @@
 import numpy as np
 import cv2
+import imutils
 
 # Capture video from file
-cap = cv2.VideoCapture('wasa.mp4')
+cap = cv2.VideoCapture(0)
 
 while True:
 
@@ -11,8 +12,8 @@ while True:
     if ret == True:
 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
         cv2.imshow('frame',gray)
+
 
 
         if cv2.waitKey(30) & 0xFF == ord('q'):
