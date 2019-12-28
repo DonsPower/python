@@ -59,16 +59,20 @@ def gameControl():
             if (x%2)!=0:
                 #SEtea A
                 xgame=input("InsertaX :" )
+                while ygame>9:
+                    ygame=input("Inserta X un numero en el rango 1/9: " )
                 while board[xgame-1]!="-":
-                    xgame=input("Introduce en otra posicion o numero x :" )
+                    xgame=input("Introduce X en otra posicion o numero x :" )
                 board.pop(xgame-1)
                 board.insert(xgame-1,"X")
                 plataforma()
             else:
                 #Setea b
                 ygame=input("InsertaY :" )
-                while board[ygame-1]!="-":    
-                    ygame=input("InsertaY en otra posicion o numero: y" )
+                while ygame>9:
+                    ygame=input("Inserta Y un numero en el rango 1/9: " )
+                while board[ygame-1]!="-":
+                    ygame=input("Inserta Y en otra posicion o numero: " )
                 board.pop(ygame-1)
                 board.insert(ygame-1,"Y")
                 plataforma()
